@@ -1,0 +1,27 @@
+# Docker
+*.log
+*.pid
+*.sock
+tmp/
+
+# Node.js
+node_modules/
+
+# Python
+__pycache__/
+
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+
+# Env files
+.env
+
+# VSCode / Codespaces
+.vscode/
+.devcontainer/
+
+#ppk
+technova-key.ppk
