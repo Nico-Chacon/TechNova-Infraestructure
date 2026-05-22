@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  frontend:
+    build: ./technova-frontend
+    container_name: technova-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+  backend:
+    build: ./technova-backend
+    container_name: technova-backend
+    environment:
+      DB_HOST: "${DB_HOST}"
+      DB_USER: "${DB_USER}"
+      DB_PASSWORD: "${DB_PASSWORD}"
+      DB_NAME: "${DB_NAME}"
+      DB_PORT: "3306"
+    ports:
+      - "3001:3001"
