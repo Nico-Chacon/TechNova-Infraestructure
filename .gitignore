@@ -24,4 +24,4 @@ terraform.tfstate.backup
 .devcontainer/
 
 #ppk
-technova-key.ppk
+.technova-key.ppk
